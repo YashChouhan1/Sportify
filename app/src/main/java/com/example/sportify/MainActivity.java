@@ -15,12 +15,13 @@ import com.google.android.material.textfield.TextInputEditText;
  *     Swayam Sahu, Sourabh patware, Vicky Koushal, Yash Chouhan
  * **/
 public class MainActivity extends AppCompatActivity {
-    TextInputEditText editTextEmail, editTextPassword;
+    TextInputEditText  editTextEmail, editTextPassword;
     Button buttonLogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         editTextEmail= findViewById(R.id.email);
         editTextPassword = findViewById(R.id.password);
         buttonLogin = findViewById(R.id.login_btn);
@@ -37,11 +38,11 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
                 if(TextUtils.isEmpty(password)){
-                    Toast.makeText(MainActivity.this,"Enter Password", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this,"Enter password", Toast.LENGTH_SHORT).show();
                     return;
                 }
+
             }
         });
-
     }
 }
