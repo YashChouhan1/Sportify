@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+
+
+    <ImageView
+        android:id="@+id/Profile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/default_profile" />
+
+    <TextView
+        android:id="@+id/Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Username"
+        android:textSize="18sp" />
+
+    <TextView
+
+        android:id="@+id/profileEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="user@example.com"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="426dp"
+        android:layout_marginBottom="247dp"
+        android:layout_weight="1"
+        android:padding="12dp"
+        android:text="Setting"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="193dp"
+        android:layout_marginTop="446dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="261dp"
+        android:layout_toEndOf="@+id/settings"
+        android:src="@drawable/setting_icon" />
+
+    <Button
+        android:id="@+id/btnEditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="272dp"
+        android:layout_marginEnd="136dp"
+        android:text="Edit Profile" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnEditProfile"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="279dp"
+        android:layout_marginEnd="161dp"
+        android:text="Logout" />
+
+    <TextView
+        android:id="@+id/ViewTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/settings"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="313dp"
+        android:layout_marginBottom="104dp"
+        android:text="Team"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="193dp"
+        android:layout_marginTop="526dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="181dp"
+        android:layout_toEndOf="@+id/settings"
+        android:src="@drawable/ic_baseline_gamepad_24" />
+
+
+</RelativeLayout>
