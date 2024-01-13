@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//<<<<<<<<< Temporary merge branch 1
+<<<<<<<<< Temporary merge branch 1
         editTextEmail= findViewById(R.id.email);
         editTextPassword = findViewById(R.id.password);
         buttonLogin = findViewById(R.id.login_btn);
@@ -43,9 +43,9 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-//=========
-//
-//>>>>>>>>> Temporary merge branch 2
+=========
+
+>>>>>>>>> Temporary merge branch 2
 
     }
 }
