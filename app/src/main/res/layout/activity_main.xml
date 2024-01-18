@@ -83,7 +83,8 @@
                 android:id="@+id/email"
                 android:hint="Email"
                 android:drawableEnd="@drawable/done_icon"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                />
 
             <View
                 android:layout_width="wrap_content"
