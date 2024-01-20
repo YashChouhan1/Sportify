@@ -43,8 +43,14 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    // // Import the Firebase BoM
-    implementation platform('com.google.firebase:firebase-bom:32.7.0')
-    implementation 'com.google.firebase:firebase-analytics'
+    // TODO please specify the use of this dependency
     implementation 'org.imaginativeworld.whynotimagecarousel:whynotimagecarousel:2.1.0'
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:32.7.0')
+    // dependency for the Cloud Firebase analytics
+    implementation 'com.google.firebase:firebase-analytics'
+    // dependency for the Firebase Authentication library
+    implementation("com.google.firebase:firebase-auth")
+    // dependency for the Cloud FireStore library
+    implementation("com.google.firebase:firebase-firestore")
 }

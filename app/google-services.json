@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:327382720488:android:84043aa62962f801e84e5d",
+        "mobilesdk_app_id": "1:327382720488:android:46a1d98a31ebab59e84e5d",
         "android_client_info": {
-          "package_name": "com.android.application"
+          "package_name": "com.example.sportify"
         }
       },
       "oauth_client": [],

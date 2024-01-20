@@ -2,51 +2,47 @@ package com.example.sportify;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 
 import com.example.sportify.databinding.ActivityHomeBinding;
-import com.example.sportify.databinding.ActivityMainBinding;
+
 
 public class Home extends AppCompatActivity {
 
     ActivityHomeBinding binding;
+    private final HomeFragment homeFragment  = new HomeFragment();
+    private final ProfileFragment profileFragment  = new ProfileFragment();
+    private final SettingsFragment settingsFragment = new SettingsFragment();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityHomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-replaceFragment(new HomeFragment());
+        replaceFragment(homeFragment);
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
 
             switch (item.getItemId())
             {
                 case R.id.home:
-                    replaceFragment(new HomeFragment());
+                    replaceFragment(homeFragment);
                     break;
                 case R.id.profile:
-                    replaceFragment(new ProfileFragment());
+                    replaceFragment(profileFragment);
                     break;
                 case R.id.settings:
-                    replaceFragment(new SettingsFragment());
+                    replaceFragment(settingsFragment);
                     break;
             }
 
-
             return  true;
-
-
 
         });
     }
     private void replaceFragment(Fragment fragment) {
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        //fragmentTransaction.replace(R.id.frame_layout,fragment);
-        fragmentTransaction.commit();
+        // TODO: replace  container with actual id of fragment and uncomment it
+        // getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
 
     }
 }

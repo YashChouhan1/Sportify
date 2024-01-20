@@ -16,13 +16,16 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:textColor="@color/purple_700"
-        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:drawableStart="@drawable/ic_baseline_search_24"
         android:drawablePadding="5dp"
         android:elevation="3dp"
         android:background="@drawable/circle"
         android:hint="Search Event here... "
         android:padding="13dp"
-        android:singleLine="true" />
+        android:singleLine="true"
+        android:inputType="textShortMessage"
+        android:autofillHints=""
+        tools:ignore="HardcodedText" />
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nestedScrollView"
