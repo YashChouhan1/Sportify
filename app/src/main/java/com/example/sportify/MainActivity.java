@@ -39,18 +39,6 @@ public class MainActivity extends AppCompatActivity {
         editTextPassword = findViewById(R.id.password);
         buttonLogin = findViewById(R.id.login_btn);
 
-//        @Override
-//        public void onStart;() {
-//            super.onStart();
-//            // Check if user is signed in (non-null) and update UI accordingly.
-//            FirebaseUser currentUser = mAuth.getCurrentUser();
-//            if(currentUser != null){
-//                Intent intent = new Intent(getApplicationContext(), Home.class);
-//                startActivity(intent);
-//                finish();
-//            }
-//        }
-
         buttonLogin.setOnClickListener(view -> {
             String email, password;
             email = String.valueOf(editTextEmail.getText());
