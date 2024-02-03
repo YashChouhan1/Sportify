@@ -1,2 +1,5 @@
-package com.example.sportify.Firebase;public class Helper {
+package com.example.sportify.Firebase;
+
+public class Helper {
+
 }
