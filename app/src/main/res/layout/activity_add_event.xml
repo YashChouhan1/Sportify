@@ -25,6 +25,12 @@
             android:layout_height="200dp"
             android:scaleType="centerCrop"
             android:src="@drawable/placeholder_image" />
+        <Button
+            android:id="@+id/btnUploadImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Image"
+            android:layout_marginTop="8dp" />
 
         <!-- Event Title -->
         <EditText

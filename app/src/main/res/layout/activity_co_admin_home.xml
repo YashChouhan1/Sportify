@@ -10,6 +10,7 @@
     <!-- Options for the co-admin -->
 
 
+
     <TextView
         android:id="@+id/textViewWelcome"
         android:layout_width="wrap_content"
@@ -20,6 +21,7 @@
         android:text="Welcome, Co-admin!"
         android:textAlignment="center"
         android:textSize="24sp"
+        android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,6 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="259dp"
+        android:background="@drawable/shap"
         android:orientation="vertical"
         android:padding="16dp">
 
@@ -60,6 +63,7 @@
         android:layout_marginBottom="363dp"
         android:orientation="vertical"
         android:id="@+id/viewshedule"
+        android:background="@drawable/shap"
         android:padding="16dp">
 
         <ImageView
@@ -77,14 +81,14 @@
     </LinearLayout>
 
 
-
     <LinearLayout
+        android:id="@+id/AddEvent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="476dp"
+        android:layout_marginBottom="470dp"
+        android:background="@drawable/shap"
         android:orientation="vertical"
-        android:id="@+id/AddEvent"
         android:padding="16dp">
 
         <ImageView
@@ -92,7 +96,6 @@
             android:layout_height="40dp"
 
             android:src="@drawable/addevent" />
-
 
 
         <TextView
@@ -103,6 +106,28 @@
             android:textSize="16sp" />
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/adduser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="156dp"
+        android:background="@drawable/shap"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="40dp"
+            android:src="@drawable/addstudent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Student"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
