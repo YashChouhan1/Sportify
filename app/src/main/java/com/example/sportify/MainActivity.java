@@ -44,16 +44,20 @@ public class MainActivity extends AppCompatActivity {
             email = String.valueOf(editTextEmail.getText());
             password = String.valueOf(editTextPassword.getText());
 
-            if(TextUtils.isEmpty(email)){
-                Toast.makeText(MainActivity.this,"Enter email", Toast.LENGTH_SHORT).show();
-                return;
-            }
-            if(TextUtils.isEmpty(password)){
-                Toast.makeText(MainActivity.this,"Enter password", Toast.LENGTH_SHORT).show();
-                return;
-            }
 
-            mAuth = FirebaseAuth.getInstance();
+
+
+
+           // if(TextUtils.isEmpty(email)){
+          //      Toast.makeText(MainActivity.this,"Enter email", Toast.LENGTH_SHORT).show();
+          //      return;
+          //  }
+          //  if(TextUtils.isEmpty(password)){
+          //      Toast.makeText(MainActivity.this,"Enter password", Toast.LENGTH_SHORT).show();
+            //    return;
+            //}
+
+         //   mAuth = FirebaseAuth.getInstance();
 
 //            mAuth.createUserWithEmailAndPassword(email, password)
 //                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -73,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
 //                        }
 //                    });
 
+
             mAuth.signInWithEmailAndPassword(email, password)
                     .addOnCompleteListener( new OnCompleteListener<AuthResult>() {
                         @Override
@@ -88,7 +93,28 @@ public class MainActivity extends AppCompatActivity {
                                         Toast.LENGTH_SHORT).show();
                             }
                         }
-                    });
-        });
+
+               });
+
+            if (isValidCredentials(email, password)) {
+                // Credentials are valid, open Co-admin home page
+                Intent intent = new Intent(MainActivity.this, Co_Admin_Home.class);
+                startActivity(intent);
+                finish(); // Finish the LoginActivity so the user cannot go back to it
+            } else {
+                // Credentials are invalid, show error message
+                Toast.makeText(MainActivity.this, "Invalid ID or password", Toast.LENGTH_SHORT).show();
+            }
+
+    });
+}
+
+    private boolean isValidCredentials(String enteredId, String enteredPassword) {
+        // Define your predefined ID and password
+        String validId = "admin";
+        String validPassword = "admin123";
+
+        // Check if the entered credentials match the predefined values
+        return enteredId.equals(validId) && enteredPassword.equals(validPassword);
     }
 }

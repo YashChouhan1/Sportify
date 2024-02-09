@@ -51,10 +51,14 @@ dependencies {
     // dependency for the Cloud Firebase analytics
     implementation 'com.google.firebase:firebase-analytics'
     //dependency for storage
-    implementation 'com.google.firebase:firebase-storage:23.0.0'
+   // implementation 'com.google.firebase:firebase-storage:23.0.0'
 
     // dependency for the Firebase Authentication library
     implementation("com.google.firebase:firebase-auth")
     // dependency for the Cloud FireStore library
     implementation("com.google.firebase:firebase-firestore")
+
+
+
+
 }
