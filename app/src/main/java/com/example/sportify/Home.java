@@ -3,7 +3,10 @@ package com.example.sportify;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.example.sportify.databinding.ActivityHomeBinding;
 
@@ -11,6 +14,7 @@ import com.example.sportify.databinding.ActivityHomeBinding;
 public class Home extends AppCompatActivity {
 
     ActivityHomeBinding binding;
+
     private final HomeFragment homeFragment  = new HomeFragment();
     private final ProfileFragment profileFragment  = new ProfileFragment();
     private final SettingsFragment settingsFragment = new SettingsFragment();
@@ -20,6 +24,7 @@ public class Home extends AppCompatActivity {
         binding = ActivityHomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         replaceFragment(homeFragment);
+
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
 
