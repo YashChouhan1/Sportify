@@ -114,6 +114,7 @@ public class MainActivity extends AppCompatActivity {
         String validId = "admin";
         String validPassword = "admin123";
 
+
         // Check if the entered credentials match the predefined values
         return enteredId.equals(validId) && enteredPassword.equals(validPassword);
     }
