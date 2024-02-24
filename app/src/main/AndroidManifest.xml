@@ -21,13 +21,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".add_event"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".Co_Admin_Home"
             android:exported="false">
             <meta-data

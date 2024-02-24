@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
 
             if (isValidCredentials(email, password)) {
                 // Credentials are valid, open Co-admin home page
-                Intent intent = new Intent(MainActivity.this, Co_Admin_Home.class);
+                Intent intent = new Intent(MainActivity.this, Adduser.class);
                 startActivity(intent);
                 finish(); // Finish the LoginActivity so the user cannot go back to it
             } else {

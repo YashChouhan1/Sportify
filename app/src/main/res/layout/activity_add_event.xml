@@ -4,15 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".add_event">
+    tools:context=".Add_Event">
+
 
 
     <!-- res/layout/activity_add_event.xml -->
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -37,14 +35,16 @@
             android:id="@+id/editTextEventTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Event Title"/>
+            android:hint="Event Title"
+            android:minHeight="48dp"></EditText>
 
         <!-- Event Description -->
         <EditText
             android:id="@+id/editTextEventDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Event Description"/>
+            android:hint="Event Description"
+            android:minHeight="48dp" />
 
         <!-- Button to Add Event -->
         <Button
@@ -53,6 +53,5 @@
             android:layout_height="wrap_content"
             android:text="Add Event"/>
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
