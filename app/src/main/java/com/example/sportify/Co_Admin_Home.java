@@ -20,7 +20,7 @@ public class Co_Admin_Home extends AppCompatActivity {
         adduser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Co_Admin_Home.this,Home.class);
+                Intent intent = new Intent(Co_Admin_Home.this,Adduser.class);
                 startActivity(intent);
             }
         });
