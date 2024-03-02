@@ -14,6 +14,9 @@
         android:theme="@style/Theme.Sportify"
         tools:targetApi="34">
         <activity
+            android:name=".UserTeam"
+            android:exported="false" />
+        <activity
             android:name=".Adduser"
             android:exported="false">
             <meta-data
