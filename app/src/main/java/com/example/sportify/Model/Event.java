@@ -15,6 +15,9 @@ public class Event {
         this.eventDate = eventDate;
     }
 
+    public Event(String eventId, String eventName, String eventDescription) {
+    }
+
     public int getEventId() {
         return eventId;
     }

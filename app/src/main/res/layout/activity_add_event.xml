@@ -32,7 +32,7 @@
 
         <!-- Event Title -->
         <EditText
-            android:id="@+id/editTextEventTitle"
+            android:id="@+id/editTextEventName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Event Title"
