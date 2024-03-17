@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/shap"
+    android:padding="25dp">
+
+    <TextView
+        android:id="@+id/textViewEventName"
+        android:text="Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/textViewEventDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="description..."/>
+
+    <TextView
+        android:id="@+id/textViewEventDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="01/01/1999"
+        android:layout_marginTop="8dp" />
+
+
+</LinearLayout>

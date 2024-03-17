@@ -1,14 +1,14 @@
 package com.example.sportify;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.sportify.databinding.ActivityHomeBinding;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 
 public class Home extends AppCompatActivity {
@@ -18,12 +18,19 @@ public class Home extends AppCompatActivity {
     private final HomeFragment homeFragment  = new HomeFragment();
     private final ProfileFragment profileFragment  = new ProfileFragment();
     private final SettingsFragment settingsFragment = new SettingsFragment();
+    private DatabaseReference mDatabase;
+    private RecyclerView recyclerView;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityHomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         replaceFragment(homeFragment);
+
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("events");
+
 
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {

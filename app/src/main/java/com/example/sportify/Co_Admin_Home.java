@@ -14,7 +14,7 @@ import com.example.sportify.databinding.ActivityHomeBinding;
 
 public class Co_Admin_Home extends AppCompatActivity {
 
-    LinearLayout AddEvent,adduser;
+    LinearLayout AddEvent,adduser,viewshedule;
     ActivityHomeBinding binding;
 
     private final HomeFragment homeFragment  = new HomeFragment();
@@ -31,6 +31,7 @@ public class Co_Admin_Home extends AppCompatActivity {
 
          adduser = findViewById(R.id.adduser);
         AddEvent = findViewById(R.id.AddEvent);
+        viewshedule= findViewById(R.id.viewshedule);
 
 
         adduser.setOnClickListener(new View.OnClickListener() {
@@ -46,6 +47,13 @@ public class Co_Admin_Home extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Co_Admin_Home.this,Add_Event.class);
                 startActivity(intent);
+            }
+        });
+        viewshedule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Co_Admin_Home.this,View_shedule.class);
+                  startActivity(intent);
             }
         });
 
