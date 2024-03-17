@@ -48,11 +48,11 @@ public class Adduser extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Get email and password from EditText fields
-                String email = editTextStudentEmail.getText().toString();
-                String password = editTextStudentPassword.getText().toString();
+                String u_email = editTextStudentEmail.getText().toString();
+                String u_password = editTextStudentPassword.getText().toString();
 
                 // Create new user with email and password
-                mAuth.createUserWithEmailAndPassword(email, password)
+                mAuth.createUserWithEmailAndPassword(u_email, u_password)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -62,7 +62,7 @@ public class Adduser extends AppCompatActivity {
                                     String userId = user.getUid();
 
                                     // Add student information to Realtime Database
-                                    Student student = new Student(email);
+                                    Student student = new Student(u_email);
                                     mDatabase.child(userId).setValue(student);
 
                                     // Inform user about successful sign up
